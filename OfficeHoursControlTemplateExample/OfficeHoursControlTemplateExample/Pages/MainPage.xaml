@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:AppPage x:Class="OfficeHoursControlTemplateExample.Pages.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:OfficeHoursControlTemplateExample.Pages">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="phonePortrait">
+                <Label Text="Welcome to Phone Portrait Xamarin.Forms!"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            </ControlTemplate>
+            <ControlTemplate x:Key="phoneLandscape">
+                <Label Text="Welcome to Phone Landscape Xamarin.Forms!"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            </ControlTemplate>
+            <ControlTemplate x:Key="tabletPortrait">
+                <Label Text="Welcome to Tablet Portrait Xamarin.Forms!"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            </ControlTemplate>
+            <ControlTemplate x:Key="tabletLandscape">
+                <Label Text="Welcome to Tablet Landscape Xamarin.Forms!"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentView ControlTemplate="{Binding PageControlTemplate}" />
+</local:AppPage>
